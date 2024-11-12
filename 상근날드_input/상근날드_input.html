@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>상근날드 메뉴 가격 계산기</title>
+    <style>
+      .box {
+        width: 1000px;
+        height: 300px;
+        display: flex;
+        border: 1px solid black;
+        background-color: blanchedalmond;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        font-weight: bold;
+        color: royalblue;
+        z-index: 1;
+      }
+      input[type="number"] {
+        margin: 5px;
+        padding: 10px;
+        width: 200px;
+        z-index: 2;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>메뉴 가격 입력</h1>
+    <input type="number" id="burger1" placeholder="첫번째 햄버거 가격" />
+    <input type="number" id="burger2" placeholder="두번째 햄버거 가격" />
+    <input type="number" id="burger3" placeholder="세번째 햄버거 가격" />
+    <input type="number" id="drink1" placeholder="첫번째 음료 가격" />
+    <input type="number" id="drink2" placeholder="두번째 음료 가격" />
+    <button onclick="calculatePrice()">가격 계산</button>
+    <div id="result" class="box"></div>
+    <script src="./상근날드_input.js"></script>
+  </body>
+</html>
